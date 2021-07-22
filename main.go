@@ -42,6 +42,7 @@ func main() {
 	fmt.Println("ave =", ave)
 	fmt.Println(x)
 	fmt.Println(y)
+	fmt.Println(runtime.GOOS, runtime.GOARCH, runtime.Version())
 }
 
 func histogram(d []time.Duration, n int) (ave time.Duration, x []int, y []time.Duration) {
